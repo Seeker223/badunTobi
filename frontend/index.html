@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badun Oluwatobi - DevOps, AI & Fullstack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">Badun Oluwatobi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Mobile Navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">Badun Oluwatobi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li class="menu-close" onclick="toggleMenu()">
+                    <i class="fas fa-times"></i>
+                </li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+                <li><a href="blog.html" onclick="toggleMenu()">Blog</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="profile" aria-label="Profile and introduction">
+        <div class="hero">
+            <div class="section__pic-container">
+                <img src="./assets/4haxa4.jpg" alt="Badun Tobi profile picture" />
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Badun Oluwatobi</h1>
+                <p class="section__text__p2">CEO & FOUNDER NeedForSoftwares</p>
+                <p class="section__text__p3" >DevOps, AI & Fullstack Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">
+                        CV Resume
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" 
+                         onclick="window.open('https://linkedin.com/in/badun-oluwatobi', '_blank')" />
+                    <img src="./assets/github.png" alt="My Github profile" class="icon" 
+                         onclick="window.open('https://github.com/seeker223', '_blank')" />
+                    <img src="./assets/twitter-x-seeklogo.png" alt="My Twitter profile" class="icon" 
+                         onclick="window.open('https://twitter.com/', '_blank')" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow">
+        <h1 class="bold info-me">
+           despite AI Bubble, Developers are still needed in todays Era .
+            <br>
+            on the Safer side Build A Product, Own it, Sell it. Because thats what Ai cant take from you
+        </h1>
+    </section>
+
+    <!-- Carousel Section -->
+    <section id="flow1">
+        <h2 class="carousel-title">Blogs</h2>
+        <div id="carousel">
+            <div class="slider">
+                <img src="" alt="">
+                <div class="slider-caption">
+                    <h3>Modern Web Application</h3>
+                    <p>React & Node.js Fullstack Project</p>
+                </div>
+            </div>
+            <div class="slider">
+                <img src="" alt="">
+                <div class="slider-caption">
+                    <h3>AI Integration Project</h3>
+                    <p>Machine Learning & Deep Learning</p>
+                </div>
+            </div>
+            <div class="slider">
+                <img src="" alt="">
+                <div class="slider-caption">
+                    <h3>DevOps Implementation</h3>
+                    <p>CI/CD Pipeline & Containerization</p>
+                </div>
+            </div>
+            <div class="slider">
+                <img src="" alt="">
+                <div class="slider-caption">
+                    <h3>Mobile Responsive Design</h3>
+                    <p>Cross-platform Development</p>
+                </div>
+            </div>
+            <div class="slider">
+                <img src="" alt="">
+                <div class="slider-caption">
+                    <h3>Database Architecture</h3>
+                    <p>MongoDB No-SQL, Vector database</p>
+                </div>
+            </div>
+            <div class="slider">
+                <img src="" alt="">
+                <div class="slider-caption">
+                    <h3>Agentic Development</h3>
+                    <p>Claude Code, Antigravity, Gemini Cli </p>
+                </div>
+            </div>
+        
+            <div class="slider">
+                <img src="" alt="">
+                <div class="slider-caption">
+                    <h3>NeedForSoftwares</h3>
+                    <p>Why i started a Tech Startup</p>
+                </div>
+            </div>
+            <div class="slider">
+                <img src="" alt="">
+                <div class="slider-caption">
+                    <h3>Hender Xender</h3>
+                    <p>New Social Media Networking App</p>
+                </div>
+            </div>
+            <div class="slider">
+                <img src="" alt="">
+                <div class="slider-caption">
+                    <h3>Africa Tech Ecosystem</h3>
+                    <p>How I Imagine Africa Tech Growth</p>
+                </div>
+            </div>
+        </div>
+        <!-- Controls added via JavaScript -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about" aria-label="About section">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/Snapchat-650724167_2.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>5+ years <br />Frontend Development</p>
+                        <p>4+ years <br />Backend Development</p>
+                        <p>3+ years <br />DevOps & AI</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>National Diploma in Electrical and Electronics Engineering</p>
+                        <p>Certified Fullstack Web Developer</p>
+                        <p>AI & Machine Learning Specialization</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p><strong class="bold">Core Technical Skills:</strong></p>
+                    <hr class="bold">
+                    <p>A resilient developer and expert in code environments with extensive knowledge in <strong>Mern-fullstack development, Reactnative Mobile Development, Artificial Intelligence, and DevOps</strong>.</p>
+                    <!-- <br>
+                    <p class="bold">Specialized Expertise:</p>
+                    <hr class="bold">
+                    <p>2D & 3D game development, mechatronics & robotics, compiler development, machine learning, deep learning, generative AI, cybersecurity, data structures, data science, augmented reality, animation, research and development.</p>
+                    <br>
+                    <p><strong>Supplementary Skills:</strong></p>
+                    <hr>
+                    <p>Content creation, digital marketing, graphic design, technical writing, project management, team leadership, and agile methodologies.</p>
+                     -->
+                    <div class="quote-container">
+                        <p>"Here I will share my previous and recent projects in my tech journey"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" aria-label="Professional experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML/CSS</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>React.js</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Tailwind CSS</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>SASS/SCSS</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend & DevOps</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Node.js</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>MongoDB</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Docker</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Git/GitHub</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>AWS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Mobile development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Reactnative</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Expo Go</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Android</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Ios</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>NativeWind</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Api</h3>
+                                <p>Advance</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">AI & Data Science</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>TensorFlow</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>PyTorch</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Pandas</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>NumPy</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>OpenCV</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Scikit-learn</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" aria-label="Projects portfolio">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="project-type" role="tablist" aria-label="Project filter buttons">
+            <div class="pbtn active" data-filter="all" role="tab" aria-selected="true">All Projects</div>
+            <div class="pbtn" data-filter="web" role="tab" aria-selected="false">Web Design</div>
+            <div class="pbtn" data-filter="mern" role="tab" aria-selected="false">MernStack</div>
+            <div class="pbtn" data-filter="ai" role="tab" aria-selected="false">AI/ML</div>
+            <div class="pbtn" data-filter="mobile" role="tab" aria-selected="false">Mobile Dev</div>
+        </div>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container" data-category="web">
+                    <div class="article-container">
+                        <img src="./assets/techedu.jpg" alt="Tech Edu Platform" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Tech Edu Platform</h2>
+                    <p class="project-description">A responsive educational platform for tech courses with interactive UI, user authentication, and course management system.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/seeker223/Frontend_edutech', '_blank')">
+                            <i class="fab fa-github"></i> GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://seeker223.github.io/Frontend_edutech/', '_blank')">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container" data-category="web">
+                    <div class="article-container">
+                        <img src="./assets/freelancer.jpg" alt="Freelancer Portfolio" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Freelancer Portfolio</h2>
+                    <p class="project-description">A professional portfolio website for freelance designers with CMS integration, contact form, and project showcase.</p>
+                    <div class="tech-stack">
+                        <span>Html</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/seeker223/dorcas_portfolio', '_blank')">
+                            <i class="fab fa-github"></i> GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://seeker223.github.io/dorcas_portfolio/', '_blank')">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container" data-category="web">
+                    <div class="article-container">
+                        <img src="./assets/Christmas.jpg" alt="Christmas Website" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Christmas Website</h2>
+                    <p class="project-description">A festive holiday website with animations, interactive elements, countdown timer, and wishlist features.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>GSAP</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/seeker223/Frontend_Christmas', '_blank')">
+                            <i class="fab fa-github"></i> GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://seeker223.github.io/Frontend_Christmas/', '_blank')">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container" data-category="mobile">
+                    <div class="article-container">
+                        <img src="./assets/hender_xender.png" alt="Hender Xender" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Social Networking App</h2>
+                    <p class="project-description">Android Plaform Reactnative App</p>
+                    <div class="tech-stack">
+                        <span>ReactNative</span>
+                        <span>Expo Go</span>
+                        <span>EAS Build</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Express</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open()">
+                            <i class="fab fa-github"></i> GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('#', '_blank')">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container" data-category="mobile">
+                    <div class="article-container">
+                        <img src="./assets/biggidata home.jpg" alt="Mobile App" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">React Native VTU app</h2>
+                    <p class="project-description">Billing, Airtime and Data reselling app</p>
+                    <div class="tech-stack">
+                        <span>React Native</span>
+                        <span>Expo</span>
+                        <span>EAS Build</span>
+                        <span>Android Platform</span>
+                        <span>NativeWind</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Oauth</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open()">
+                            <i class="fab fa-github"></i> GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://biggidata.com.ng', '_blank')">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container" data-category="mern">
+                    <div class="article-container">
+                        <img src="./assets/badunChatApp.png" alt="Mobile App" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Chat App</h2>
+                    <p class="project-description">MernStack whatsapp-Like Chatting app</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Socket.io</span>
+                        <span>Web Socket</span>
+                        <span>Tailwindcss</span>
+                        <span>Cloudinary</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open()">
+                            <i class="fab fa-github"></i> GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open()">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container" data-category="mern">
+                    <div class="article-container">
+                        <img src="./assets/needforsoftwares.png" alt="Mobile App" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Mern-fullstack Website</h2>
+                    <p class="project-description">NeedForsoftwares, WebTechnology Site</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Socket.io</span>
+                        <span>Web Socket</span>
+                        <span>Tailwindcss</span>
+                        <span>ImageKit</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open()">
+                            <i class="fab fa-github"></i> GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open()">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </button>
+                    </div>
+                </div>
+                <!-- <div class="details-container color-container" data-category="ai">
+                    <div class="article-container">
+                        <img src="./assets/Christmas.jpg" alt="AI Project" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Image Classification AI</h2>
+                    <p class="project-description">Deep learning model for image classification using TensorFlow and PyTorch, achieving 95% accuracy on custom dataset.</p>
+                    <div class="tech-stack">
+                        <span>TensorFlow</span>
+                        <span>Python</span>
+                        <span>PyTorch</span>
+                        <span>OpenCV</span>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/seeker223/', '_blank')">
+                            <i class="fab fa-github"></i> GitHub
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('#', '_blank')">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#work'" />
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" aria-label="Work experience history">
+        <p class="section__text__p1">Professional Journey</p>
+        <h1 class="title">Work Experience</h1>
+        <div id="workedin">
+            <div class="work-item">
+                <div class="work-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>NeedFor<br>Softwares</h3>
+                <p class="work-role">Fullstack Developer</p>
+                <p class="work-duration">2025 - 2026</p>
+                <p class="work-description">Founder NeedForSoftwares Developed and maintained web applications using MERN stack, implemented REST APIs, and collaborated with cross-functional teams.</p>
+            </div>
+            <div class="work-item">
+                <div class="work-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Relearn</h3>
+                <p class="work-role">Platform Manager & Fullstack Developer</p>
+                <p class="work-duration">2024 - 2024</p>
+                <p class="work-description">Supervise and Secure Platform Projects, WebTechnologies, Learning Management Systems, Manager of Relearn Academy</p>
+            </div>
+            <div class="work-item">
+                <div class="work-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>Freelancer</h3>
+                <p class="work-role">DevOps Engineer</p>
+                <p class="work-duration">2024 - 2025</p>
+                <p class="work-description">Implemented CI/CD pipelines, containerized applications with Docker, and managed cloud infrastructure on AWS.</p>
+            </div>
+            <div class="work-item">
+                <div class="work-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Btech</h3>
+                <p class="work-role">AI Developer</p>
+                <p class="work-duration">2020 - 2021</p>
+                <p class="work-description">Developed machine learning models for predictive analytics, implemented computer vision solutions, and optimized AI algorithms.</p>
+            </div>
+            <div class="work-item">
+                <div class="work-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Btech</h3>
+                <p class="work-role">Frontend Developer</p>
+                <p class="work-duration">2021 - 2021</p>
+                <p class="work-description">Created responsive web interfaces, implemented design systems, and optimized frontend performance for various client projects.</p>
+            </div>
+            <div class="work-item">
+                <div class="work-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Nama(Nigeria AirSpace Management Agency)</h3>
+                <p class="work-role">Internship At Airtraffic Management</p>
+                <p class="work-duration">2022 - 2023</p>
+                <p class="work-description">Maintenance of Air traffic management Softwares and air Navigation Infrastructure development</p>
+            </div>
+            <div class="work-item">
+                <div class="work-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Complete computers Technology</h3>
+                <p class="work-role">Web & Responsive Design</p>
+                <p class="work-duration">2021 - 2021</p>
+                <p class="work-description">Started Web Design Learning, built web design starting projects, Created responsive web interfaces</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-label="Contact information and form">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:baduntobi2020@gmail.com">baduntobi2020@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn Profile</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/whatsapp-seeklogo.png" alt="Whatsapp icon" class="icon contact-icon" />
+                <p><a href="https://wa.me/qr/VGPTFDGWO35EJ1" target="_blank" rel="noopener">WhatsApp Chat</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/phone-seeklogo.png" alt="Phone icon" class="icon contact-icon" />
+                <p><a href="tel:+2348132194046">+234 813 219 4046</a></p>
+            </div>
+        </div>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xvodjxdl" method="POST">
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" aria-label="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="subject" name="subject" placeholder="Subject" aria-label="Subject" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" placeholder="Your Message" rows="6" aria-label="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-color-1" aria-label="Send Message">
+                <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#flow1">Blogs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="footer-socials">
+            <a href="https://github.com/seeker223" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="copyright">Copyright &copy; <span id="currentYear"></span> Badun Oluwatobi | Tobi4programming. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
